@@ -22,7 +22,9 @@ fun main(args: Array<String>) {
     val w="""for (c in "dfg") 
         |println(c) """.trimMargin()
     if(k==null)println("mosab$s")
+
     println("mosab zakarneh")
+
 
 
 
