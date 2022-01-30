@@ -3,9 +3,9 @@ import kotlin.reflect.typeOf
 @OptIn(ExperimentalStdlibApi::class)
 fun b(s:String?)=s?.length
 fun vv()= println("df")
-fun v(){
-
-
+fun v(s:String)
+{
+    println(s)
 }
 fun main(args: Array<String>) {
 
