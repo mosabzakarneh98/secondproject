@@ -23,7 +23,10 @@ fun main(args: Array<String>) {
         |println(c) """.trimMargin()
     if(k==null)println("mosab$s")
 
+    println("mohammad")
     println("mosab zakarneh")
+    println("zaka")
+
 
 
 
