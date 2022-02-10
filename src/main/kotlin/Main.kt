@@ -1,37 +1,28 @@
-import kotlin.reflect.typeOf
-
-@OptIn(ExperimentalStdlibApi::class)
-fun b(s:String?)=s?.length
-fun vv()= println("df")
-fun v(s:String)
+fun main()
 {
-    println(s)
+ printMyName(arrayOf("mosab","zakarneh"))
+ val village= village(listOf
+     ( home (
+               listOf(person(12),person(30),person(25),person(23) )
+             ),
+
+      home (
+          listOf(person(32),person(45) )
+      ),
+     home (
+         listOf(person(33),person(21),person(27),person(16) ,person(12) )
+     )
+     )
+ )
+    val d =village.homes.sortedByDescending { it.persons.size }
+    println(d)
+
 }
-fun main(args: Array<String>) {
-
-    vv()
-    val k:String?=null
-   val t:String= when (k)
-    {
-
-        null ->"5 as String"
-      else ->""
-    }
-    println(t)
-    val s="${k?.length?:b("mosa")}"
-    val w="""for (c in "dfg") 
-        |println(c) """.trimMargin()
-    if(k==null)println("mosab$s")
-
-    println("mohammad")
-    println("mosab zakarneh")
-    println("zaka")
-
-
-
-
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun printMyName(arg:Array<String>) {
+    var temp=""
+    for (i in arg ) temp+=i+" "
+    println(temp)
 }
+data class village(val homes:List<home>)
+data class home(val persons:List<person>)
+data class person(val age:Int)
